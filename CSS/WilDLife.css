@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Style */
+.header {
+  align-items: center;
+  display: flex;
+  background-color: rgb(240, 238, 238);
+}
+
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  padding: 0 20px;
+  color: black;
+  font-size: 22px;
+}
+.links {
+  align-items: center;
+  display: flex;
+  justify-content: end;
+}
+.login {
+  transform: translateX(800px);
+  text-decoration: none;
+  background-color: tomato;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 22px;
+}
+.logo img {
+  width: 100px;
+}
+
+/* Main Style */
+.image-main img {
+  width: 100%;
+  height: 500px;
+  margin-top: -170px;
+}
+.title {
+  transform: translateY(2px);
+  font-size: 35px;
+  color: white;
+}
+.wildlife {
+  color: tomato;
+}
+.getstarted {
+  transform: translateY(-180px) translateX(50px);
+  width: 150px;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  background-color: tomato;
+  color: white;
+}
+
+/* Section Style */
+.section {
+  background-color: rgb(53, 52, 52);
+  display: flex;
+  padding: 30px;
+  gap: 90px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-37px);
+}
+.fourtyk {
+  background-color: tomato;
+  padding: 20px;
+  font-size: 22px;
+  color: white;
+  width: 115px;
+  text-align: center;
+}
+
+.eightyk {
+  background-color: tomato;
+  padding: 33px;
+  font-size: 22px;
+  color: white;
+  width: 115px;
+  text-align: center;
+}
+
+.hunderedk {
+  background-color: tomato;
+  padding: 20px;
+  font-size: 22px;
+  color: white;
+  width: 115px;
+  text-align: center;
+}
+
+.thousandk {
+  background-color: tomato;
+  padding: 20px;
+  font-size: 22px;
+  color: white;
+  width: 115px;
+  text-align: center;
+}
+
+.thousandk,
+.hunderedk,
+.fourtyk,
+.eightyk {
+  box-shadow: 2px 2px 12px white;
+}
+
+
+.about{
+  gap: 10px;
+  padding: 5px;
+  display: flex;
+  background-color: brown;
+}
+.aboutlast{
+ padding: 20px;
+  background-color: white;
+  /* width: 650px; */
+}
+.aboutimage img{
+  width: 600px;
+  padding: 10px;
+  border: 2px solid white;
+  background-color: white;
+}
+.text{
+  width: 300px;
+}
+.uppcomming{
+  padding: 20px;
+  background-color: white;
+}
+.click{
+  background-color: tomato;
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0;
+  transform: translateY(50px);
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: white;
+
+}
+.titles{
+  text-align: center;
+  font-size: 22px;
+  padding: 20px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 12px rgb(93, 93, 93);
+  text-transform: uppercase;
+  transform: translateY(-20px);
+  border-left:  2px solid red;
+  border-right:  2px solid red;
+  width: 200px;
+}
+footer {
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  background-color: rgb(98, 98, 98);
+  padding: 10px;
+  text-align: center;
+  font-size: 22px;
+  color: white;
+  gap: 20px;
+}
+.hum img{
+  width: 45px;
+  transform: translateX(750px);
+  display: none;
+}
+
+/* Hovers */
+
+.active {
+  background-color: tomato;
+  color: white;
+  border-radius: 10px;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  padding: 0 20px;
+  color: white;
+  background-color: tomato;
+  font-size: 22px;
+  border-radius: 10px;
+}
+
+.login:hover {
+  background-color: seagreen;
+}
+
+.getstarted:hover {
+  transform: translateY(-180px) translateX(50px);
+  width: 150px;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  background-color: white;
+  color: tomato;
+}
+
+.thousandk:hover,
+.hunderedk:hover,
+.fourtyk:hover,
+.eightyk:hover {
+  background-color: white;
+  color: tomato;
+  border: 5px solid tomato;
+  scale: 1.04;
+  transition: all 0.9s;
+  -rotate: 45deg;
+  cursor: pointer;
+}
+
+.click:hover{
+  background-color: red;
+  color: white;
+
+}
+.click:active{
+  background-color: brown;
+  color: white;
+}
+
+.titles:hover{
+  border-left:  5px solid brown;
+  border-right: 5px solid brown;
+}
+
+/* Media Queries */
+
+@media (max-width:768px){
+      .links{
+        display: none;
+      }
+      .section{
+        display: flex;
+        flex-direction: column;
+      }
+      .about{
+        display: flex;
+        flex-direction: column;
+      }
+      .aboutimage img{
+        width: 95%;
+      }
+      .click{
+        transform: translateY(1px);
+        padding: 5px;
+      }
+      .fourtyk{
+        background-color: red;
+      }
+      .eightyk{
+        background-color: red;
+      }
+      .hunderedk{
+        background-color: red;
+      }
+      .thousandk{
+        background-color: red;
+      }
+      .logo img{
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        transform: translateX(100px);
+      }
+      .hum img{
+        display: block;
+        transform: translateX(310px);
+      }
+}
+
+/* tablet */
+@media (max-width:860px){
+  .links{
+    display: none;
+  }
+  .section{
+    display: flex;
+    flex-direction: column;
+  }
+  .about{
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutimage img{
+    width: 95%;
+  }
+  .click{
+    transform: translateY(1px);
+    padding: 5px;
+  }
+  .fourtyk{
+    background-color: red;
+  }
+  .eightyk{
+    background-color: red;
+  }
+  .hunderedk{
+    background-color: red;
+  }
+  .thousandk{
+    background-color: red;
+  }
+  .logo img{
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    transform: translateX(100px);
+  }
+  .hum img{
+    display: block;
+    transform: translateX(310px);
+  }
+}

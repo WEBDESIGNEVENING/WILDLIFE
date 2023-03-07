@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: tomato;
+}
+form{
+    background-color: white;
+    border: 2px solid white;
+    justify-content: center;
+    margin: auto;
+    transform: translateY(100px);
+    width: 500px;
+    padding: 50px;
+    box-shadow: 2px 2px 12px rgb(169, 168, 168);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    
+}
+h1{
+    text-align: center; 
+    padding: 10px;
+    font-size: 55px;
+    transform: translateY(-40px);
+}
+.all{
+    display: flex;
+}
+.hide{
+    text-align: right;
+    transform: translateX(8px)translateY(32px);
+    border-radius: 100px;
+    height: 25px;
+    /* background-color: red; */
+    border: 2px solid red;
+    width: 25px;
+
+}
+.pass{
+    width: 100%;
+}
+input{
+    padding: 10px;
+    width: 100%;
+    margin: 5px;
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid rgb(155, 155, 155);
+    font-size: 18px;
+}
+button{
+    background-color: tomato;
+    color: white;
+    width: 200px;
+    margin-top: 20px;
+    border: 0;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px;
+    background-color: seagreen;
+
+}
+#reset{
+ background-color: red; 
+}
+.btn{
+    display: flex;
+    gap: 10px;
+}
+
+.close{
+    text-decoration: none;
+    padding: 650px;
+    border: 2px solid tomato;
+    height: 500px;
+    width: 100px;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    background-color: tomato;
+    color: tomato;
+    width: 25px;
+    transform: translateX(400px)translateY(10px);
+}
+
+/* Hovers */
+form:hover{
+    transition: all 0.3s ease;
+    scale: 1.05;
+}
+
+.hide:hover{
+    text-align: right;
+    transform: translateX(8px)translateY(32px);
+    border-radius: 100px;
+    height: 25px;
+    background-color: red;
+    border: 2px solid red;
+    width: 25px;
+
+}
+
+@media (max-width:768px) {
+    form{
+        width: 300px;
+        height: 400px;
+        position: relative;
+        transform: translateX(100px)translateY(100px);
+    }
+    button{
+        width: 100px;
+
+    }
+    .container{
+        width: 200px;
+        position: fixed;
+
+    }
+}
